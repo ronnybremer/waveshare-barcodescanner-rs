@@ -1,0 +1,37 @@
+[package]
+name = "waveshare-barcodescanner"
+version = "0.1.0"
+authors = ["Ronny Bremer <rbremer@almanid.com>"]
+description = "Experimental crate for interacting with a Waveshare Barcode Scanner Module (UART mode)"
+license = "MIT"
+repository = "https://github.com/ronnybremer/waveshare-barcodescanner-rs.git"
+homepage = "https://github.com/ronnybremer/waveshare-barcodescanner-rs"
+readme = "README.md"
+keywords = ["barcodescanner", "barcode", "waveshare", "serial", "uart"]
+edition = "2024"
+rust-version = "1.85.0"
+exclude = ["/.github", "/.editorconfig", "/.gitattributes", "/release.toml", "/rustfmt.toml", ".gitignore"]
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+anyhow = "1.0.98"
+chrono = "0.4.41"
+crc-any = "2.5.0"
+serial2 = "0.2.30"
+tracing = "0.1.41"
+
+[dev-dependencies]
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+
+[lib]
+name = "waveshare_barcodescanner"
+path = "src/lib.rs"
+test = true
+doctest = true
+bench = false
+doc = true
+proc-macro = false
+crate-type = ["lib"]
+required-features = []
