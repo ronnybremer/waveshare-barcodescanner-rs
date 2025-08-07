@@ -1,6 +1,6 @@
 # Experimental crate for interacting with a Waveshare Barcode Scanner Module (UART mode)
 
-[![Build status](https://github.com/ronnybremer/waveshare-barcodescanner-rs/workflows/waveshare-barcodescanner-rs/badge.svg)](https://github.com/ronnybremer/waveshare-barcodescanner-rs/actions/workflows/waveshare-barcodescanner-rs.yml)
+[![Build status](https://github.com/ronnybremer/waveshare-barcodescanner-rs/workflows/waveshare-barcodescanner-rust/badge.svg)](https://github.com/ronnybremer/waveshare-barcodescanner-rs/actions/workflows/waveshare-barcodescanner-rust.yml)
 [![Documentation](https://docs.rs/waveshare-barcodescanner/badge.svg)](https://docs.rs/waveshare-barcodescanner)
 [![Package](https://img.shields.io/crates/v/waveshare-barcodescanner.svg)](https://crates.io/crates/waveshare-barcodescanner)
 
@@ -17,9 +17,9 @@ Currently, Rust version 1.85.0 or later is required.
 ### Hardware support
 
 This crate should work with the following modules:
-* [Barcode Scanner Module][https://www.waveshare.com/barcode-scanner-module.htm]
-* [Barcode Scanner Module B][https://www.waveshare.com/barcode-scanner-module-b.htm]
-* [Barcode Scanner Module C][https://www.waveshare.com/barcode-scanner-module-c.htm]
+* [Barcode Scanner Module](htps://www.waveshare.com/barcode-scanner-module.htm)
+* [Barcode Scanner Module B](https://www.waveshare.com/barcode-scanner-module-b.htm)
+* [Barcode Scanner Module C](https://www.waveshare.com/barcode-scanner-module-c.htm)
 
 Please note that development and testing is done on the `C` revision of the module.
 
