@@ -1,6 +1,8 @@
 name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
 categories:
+  - title: 'Breaking changes'
+    label: 'breaking change'
   - title: 'Features'
     labels:
       - 'feature'
@@ -10,8 +12,16 @@ categories:
       - 'fix'
       - 'bugfix'
       - 'bug'
+  - title: 'Documentation'
+    label: 'docs'
+  - title: 'Dependency updates'
+    label: 'dependencies'
+    collapse-after: 5
   - title: 'Maintenance'
     label: 'chore'
+  - title: 'Other changes'
+    labels:
+      - 'refactor'
 commitish: main
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
@@ -26,6 +36,30 @@ version-resolver:
     labels:
       - 'patch'
   default: patch
+autolabeler:
+  - label: 'breaking change'
+    title:
+      - '/!:/i'
+  - label: 'feature'
+    title:
+      - '/feat:/i'
+  - label: 'bug'
+    title:
+      - '/fix:/i'
+  - label: 'refactor'
+    title:
+      - '/refactor:/i'
+  - label: 'chore'
+    title:
+      - '/chore:/i'
+  - label: 'docs'
+    title:
+      - '/docs:/i'
+  - label: 'dependencies'
+    title:
+      - '/deps:/i'
+      - '/dependencies:/i'
+      - '/bump:/i'
 template: |
   ## Changes
 
