@@ -8,8 +8,6 @@ A high-level interface for interacting with Waveshare Barcode Scanner modules.
 
 The API is usable, but unstable and not very battle-tested; use at your own risk.
 
-[Changelog](https://github.com/ronnybremer/waveshare-barcodescanner-rs/blob/master/CHANGES.md)
-
 ### Getting started
 
 Please look at the provided examples on how to use this crate.
