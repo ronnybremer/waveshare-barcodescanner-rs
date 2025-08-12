@@ -17,7 +17,7 @@ jobs:
         id: version
         run: echo "::set-output name=version::${GITHUB_REF#refs/tags/v}"
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: v${{ steps.version.outputs.version }}
 
