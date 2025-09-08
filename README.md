@@ -3,6 +3,7 @@
 [![Build status](https://github.com/ronnybremer/waveshare-barcodescanner-rs/workflows/waveshare-barcodescanner-rust/badge.svg)](https://github.com/ronnybremer/waveshare-barcodescanner-rs/actions/workflows/waveshare-barcodescanner-rust.yml)
 [![Documentation](https://docs.rs/waveshare-barcodescanner/badge.svg)](https://docs.rs/waveshare-barcodescanner)
 [![Package](https://img.shields.io/crates/v/waveshare-barcodescanner.svg)](https://crates.io/crates/waveshare-barcodescanner)
+[![Dependencies](https://deps.rs/repo/github/ronnybremer/waveshare-barcodescanner-rs/status.svg)](https://deps.rs/repo/github/ronnybremer/waveshare-barcodescanner-rs)
 
 A high-level interface for interacting with Waveshare Barcode Scanner modules.
 
