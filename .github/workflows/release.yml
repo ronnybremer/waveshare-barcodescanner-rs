@@ -21,7 +21,7 @@ jobs:
         with:
           ref: v${{ steps.version.outputs.version }}
 
-      - uses: release-drafter/release-drafter@v6
+      - uses: release-drafter/release-drafter@v7
         with:
           tag: v${{ steps.version.outputs.version }}
           name: v${{ steps.version.outputs.version }}
